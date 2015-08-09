@@ -1,0 +1,8 @@
+ZSH=$HOME/.dotfiles
+
+for cmd in $ZSH/**/*.zsh; do
+    source $cmd
+done
+
+
+

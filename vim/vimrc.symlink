@@ -1,0 +1,63 @@
+set nocompatible
+filetype plugin indent on
+
+set hlsearch
+set rnu
+set nu
+set hidden
+set scrolloff=5
+set smartcase
+set incsearch
+
+syntax on
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+let mapleader=" "
+noremap \ ,
+noremap <Leader>n :NERDTreeToggle<CR>
+
+""disable the  arrow keys
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+
+""clear search highlighting
+nnoremap <CR> :noh<CR><CR>
+
+function s:PluginsMissing()
+    " The g:plugs map maps the plugin name to the settings for it.
+    " The most relevant setting for this is the 'dir' setting which is the
+    " destination folder.
+    " Example (truncated) output of ':echo g:plugs':
+    " {'vim-surround': {'uri': 'https://github.com/tpope/vim-surround.git', 'dir': '/home/matthew/.vim/plugged/vim-surround/', 'frozen': 0, 'branch': 'master'},...
+
+    for spec in values(g:plugs)
+        if !isdirectory(spec.dir)
+            return 1
+        endif
+    endfor
+
+    return 0
+endfunction
+
+if !filereadable(expand('~/.vim/autoload/plug.vim'))
+    echo "Installing Vim Plug.."
+    echo ""
+    silent !mkdir --parents ~/.vim/autoload
+    silent !curl --fail --location --output ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'scrooloose/nerdtree'
+Plug 'kien/ctrlp.vim'
+
+if s:PluginsMissing()
+    PlugInstall
+endif
+
+call plug#helptags()
+call plug#end()
