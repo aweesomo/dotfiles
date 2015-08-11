@@ -11,3 +11,5 @@ alias a4='!:5'
 alias a5='!:6'
 alias a6='!:7'
 alias a7='!:8'
+
+alias mvnn='mvn clean install -DskipTests=true'
