@@ -4,5 +4,7 @@ for cmd in $ZSH/**/*.zsh; do
     source $cmd
 done
 
-
+if [ -e ~/.localrc ]; then
+    source ~/.localrc
+fi
 
