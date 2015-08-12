@@ -19,7 +19,7 @@ set backspace=indent,eol,start
 let mapleader=" "
 noremap \ ,
 noremap <Leader>n :NERDTreeToggle<CR>
-
+noremap <Leader><Leader>n :cd %:h<CR>:NERDTreeToggle<CR>
 
 
 ""disable the  arrow keys
