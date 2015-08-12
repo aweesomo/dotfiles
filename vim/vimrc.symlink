@@ -40,6 +40,7 @@ function s:ConfigureEclimJavaBindings()
     nnoremap <silent> <buffer><CR> :JavaSearchContext<CR>
     nnoremap <silent> <buffer><leader>jgs :JavaGetSet<CR>
     nnoremap <silent> <buffer><leader>ju :JUnit<CR>
+    nnoremap <silent> <buffer><leader>jc :JavaCorrect<CR>
 endfunction
 
 let g:UltiSnipsExpandTrigger="<C-e>"
