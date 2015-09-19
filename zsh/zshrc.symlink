@@ -9,4 +9,7 @@ if [ -e ~/.localrc ]; then
 fi
 
 
+#start fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#start fasd
+eval "$(~/.fasd.zsh --init auto)"
