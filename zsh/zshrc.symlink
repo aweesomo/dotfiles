@@ -8,7 +8,6 @@ if [ -e ~/.localrc ]; then
     source ~/.localrc
 fi
 
-
 #start fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 #start fasd
