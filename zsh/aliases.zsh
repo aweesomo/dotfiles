@@ -2,6 +2,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+alias ls='ls -G'
 
 alias a1='!:2'
 alias a2='!:3'
