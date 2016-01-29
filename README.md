@@ -7,6 +7,7 @@ https://github.com/holman/dotfiles
 Installation
 ------------
     git clone https://github.com/aweesomo/dotfiles
+    mv dotfiles .dotfiles
     cd ~/.dotfiles
-    script/bootstrap
-    script/install
+    scripts/bootstrap
+    scripts/install

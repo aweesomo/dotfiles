@@ -1,11 +1,5 @@
 install () {
-    if is_running_locally
-    then
         install_pip && install_powerline
-    else
-        echo "Not installing powerline... currently running on remote host"
-        true
-    fi
 }
 
 is_running_locally () {
