@@ -14,3 +14,4 @@ fi
 
 # start fzf
 source ~/.fzf.zsh
+source ~/.localrc
