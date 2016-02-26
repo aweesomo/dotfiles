@@ -15,3 +15,5 @@ fi
 # start fzf
 source ~/.fzf.zsh
 source ~/.localrc
+
+eval "$(fasd --init auto)"
