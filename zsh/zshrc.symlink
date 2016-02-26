@@ -1,9 +1,5 @@
 ZSH=$HOME/.dotfiles
 
-#Add powerline
-export PATH=/Users/samm/.local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/munki:~/Library/Python/2.7/bin
-source /Users/samm/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
-
 for cmd in $ZSH/**/*.zsh; do
     source $cmd
 done
@@ -12,8 +8,8 @@ if [ -e ~/.localrc ]; then
     source ~/.localrc
 fi
 
-# start fzf
-source ~/.fzf.zsh
-source ~/.localrc
 
-eval "$(fasd --init auto)"
+#start fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#start fasd
+eval "$(~/.fasd.zsh --init auto)"
