@@ -23,17 +23,13 @@
             KeyCode::Z, VK_CONTROL,
             KeyCode::Z, VK_COMMAND
         </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::B, KeyCode::ESCAPE, 
-            KeyCode::B, VK_CONTROL
-        </autogen>
     </item>
 
     <item>
         <name>Change default iterm</name>
         <identifier>private.iterm.changes.to.fit.dotfiles</identifier>
         <only>ITERM</only>
+
         <!--remap controls-->
         <autogen>
             __KeyToKey__
@@ -70,7 +66,13 @@
             KeyCode::Z, VK_COMMAND,
             KeyCode::Z, VK_CONTROL
         </autogen>
-        <!--unmap previous
+
+    </item>
+
+    <item>
+        <name>Unmap the command controls for iterm</name>
+        <identifier>private.unmap.old.command.functions</identifier>
+        <only>ITERM</only>
         <autogen>
             __KeyToKey__
             KeyCode::C, VK_CONTROL,
@@ -98,10 +100,16 @@
         </autogen> 
         <autogen>
             __KeyToKey__
+            KeyCode::L, VK_CONTROL,
+            KeyCode::VK_NONE
+        </autogen>
+        <autogen>
+            __KeyToKey__
             KeyCode::V, VK_CONTROL,
             KeyCode::VK_NONE
-        </autogen>  -->
+        </autogen>
     </item>
+
     <item>
         <name>Swap CMD TAB CNTRL TAB</name>
         <identifier>private.swap.cmd.tab.to.cntrl.tab</identifier>
