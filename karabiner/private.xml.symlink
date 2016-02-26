@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<root>
+    <appdef>
+        <appname>ITERM</appname>
+        <equal>com.googlecode.iterm2</equal>
+    </appdef>
+
+    <item>
+        <name>copy/paste os with command</name>
+        <identifier>private.copy.paste.with.command</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::C, VK_CONTROL,
+            KeyCode::C, VK_COMMAND
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::V, VK_CONTROL,
+            KeyCode::V, VK_COMMAND
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::Z, VK_CONTROL,
+            KeyCode::Z, VK_COMMAND
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::B, KeyCode::ESCAPE, 
+            KeyCode::B, VK_CONTROL
+        </autogen>
+    </item>
+
+    <item>
+        <name>Change default iterm</name>
+        <identifier>private.iterm.changes.to.fit.dotfiles</identifier>
+        <only>ITERM</only>
+        <!--remap controls-->
+        <autogen>
+            __KeyToKey__
+            KeyCode::C, VK_COMMAND,
+            KeyCode::C, VK_CONTROL
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::R, VK_COMMAND,
+            KeyCode::R, VK_CONTROL
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::N, VK_COMMAND,
+            KeyCode::N, VK_CONTROL
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::P, VK_COMMAND,
+            KeyCode::P, VK_CONTROL
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::V, VK_COMMAND,
+            KeyCode::V, VK_CONTROL
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::DOT, VK_COMMAND,
+            KeyCode::ESCAPE, KeyCode:: DOT
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::Z, VK_COMMAND,
+            KeyCode::Z, VK_CONTROL
+        </autogen>
+        <!--unmap previous
+        <autogen>
+            __KeyToKey__
+            KeyCode::C, VK_CONTROL,
+            KeyCode::VK_NONE
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::D, VK_CONTROL,
+            KeyCode::VK_NONE
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::R, VK_CONTROL,
+            KeyCode::VK_NONE
+        </autogen> 
+        <autogen>
+            __KeyToKey__
+            KeyCode::N, VK_CONTROL,
+            KeyCode::VK_NONE
+        </autogen> 
+        <autogen>
+            __KeyToKey__
+            KeyCode::P, VK_CONTROL,
+            KeyCode::VK_NONE
+        </autogen> 
+        <autogen>
+            __KeyToKey__
+            KeyCode::V, VK_CONTROL,
+            KeyCode::VK_NONE
+        </autogen>  -->
+    </item>
+    <item>
+        <name>Swap CMD TAB CNTRL TAB</name>
+        <identifier>private.swap.cmd.tab.to.cntrl.tab</identifier>
+        <autogen>
+            __KeyToKey__
+            KeyCode::TAB, VK_CONTROL,
+            KeyCode::TAB, VK_COMMAND
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::TAB, VK_SHIFT, VK_CONTROL,
+            KeyCode::TAB, VK_SHIFT, VK_COMMAND
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::TAB, VK_SHIFT, VK_COMMAND,
+            KeyCode::VK_NONE
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::TAB, VK_COMMAND,
+            KeyCode::VK_NONE
+        </autogen>
+    </item>
+
+</root>
+
