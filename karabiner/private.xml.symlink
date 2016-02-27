@@ -115,12 +115,12 @@
         <identifier>private.swap.cmd.tab.to.cntrl.tab</identifier>
         <autogen>
             __KeyToKey__
-            KeyCode::TAB, VK_CONTROL,
+            KeyCode::SPACE, VK_CONTROL,
             KeyCode::TAB, VK_COMMAND
         </autogen>
         <autogen>
             __KeyToKey__
-            KeyCode::TAB, VK_SHIFT, VK_CONTROL,
+            KeyCode::DELETE, VK_CONTROL,
             KeyCode::TAB, VK_SHIFT, VK_COMMAND
         </autogen>
         <autogen>
