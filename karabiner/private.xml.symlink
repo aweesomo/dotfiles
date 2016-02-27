@@ -5,6 +5,11 @@
         <equal>com.googlecode.iterm2</equal>
     </appdef>
 
+    <windownamedef>
+        <name>ITERM_VIM</name>
+        <regex>\(Vim\)</regex>
+    </windownamedef>
+
     <item>
         <name>copy/paste os with command</name>
         <identifier>private.copy.paste.with.command</identifier>
@@ -22,6 +27,18 @@
             __KeyToKey__
             KeyCode::Z, VK_CONTROL,
             KeyCode::Z, VK_COMMAND
+        </autogen>
+    </item>
+
+    <item>
+        <name>remap cntrl w when in vim</name>
+        <identifier>private.cntrl.w.for.vim</identifier>
+        <only>ITERM</only>
+        <windowname_only>ITERM_VIM</windowname_only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::W, VK_COMMAND,
+            KeyCode::W, VK_CONTROL
         </autogen>
     </item>
 
