@@ -11,30 +11,15 @@
     </windownamedef>
 
     <item>
-        <name>copy/paste os with command</name>
-        <identifier>private.copy.paste.with.command</identifier>
-        <autogen>
-            __KeyToKey__
-            KeyCode::C, VK_CONTROL,
-            KeyCode::C, VK_COMMAND
-        </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::V, VK_CONTROL,
-            KeyCode::V, VK_COMMAND
-        </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::Z, VK_CONTROL,
-            KeyCode::Z, VK_COMMAND
-        </autogen>
-    </item>
-
-    <item>
-        <name>remap cntrl w when in vim</name>
+        <name>remap cntrl v and w when in vim</name>
         <identifier>private.cntrl.w.for.vim</identifier>
         <only>ITERM</only>
         <windowname_only>ITERM_VIM</windowname_only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::V, VK_COMMAND,
+            KeyCode::V, VK_CONTROL
+        </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::W, VK_COMMAND,
@@ -67,11 +52,6 @@
             __KeyToKey__
             KeyCode::P, VK_COMMAND,
             KeyCode::P, VK_CONTROL
-        </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::V, VK_COMMAND,
-            KeyCode::V, VK_CONTROL
         </autogen>
         <autogen>
             __KeyToKey__
@@ -144,7 +124,6 @@
             KeyCode::DELETE, VK_CONTROL,
             KeyCode::TAB, VK_SHIFT, VK_COMMAND
         </autogen>
-
         <autogen>
             __KeyToKey__
             KeyCode::FORWARD_DELETE, VK_CONTROL,
