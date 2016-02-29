@@ -40,6 +40,11 @@
         </autogen>
         <autogen>
             __KeyToKey__
+            KeyCode::L, VK_COMMAND,
+            KeyCode::L, VK_CONTROL
+        </autogen>
+        <autogen>
+            __KeyToKey__
             KeyCode::R, VK_COMMAND,
             KeyCode::R, VK_CONTROL
         </autogen>
@@ -116,11 +121,6 @@
         <identifier>private.swap.cmd.tab.to.cntrl.tab</identifier>
         <autogen>
             __KeyToKey__
-            KeyCode::SPACE, VK_CONTROL,
-            KeyCode::TAB, VK_COMMAND
-        </autogen>
-        <autogen>
-            __KeyToKey__
             KeyCode::DELETE, VK_CONTROL,
             KeyCode::TAB, VK_SHIFT, VK_COMMAND
         </autogen>
@@ -128,11 +128,6 @@
             __KeyToKey__
             KeyCode::FORWARD_DELETE, VK_CONTROL,
             KeyCode::TAB, VK_COMMAND
-        </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::RETURN, VK_CONTROL,
-            KeyCode::TAB, VK_SHIFT, VK_COMMAND
         </autogen>
         <autogen>
             __KeyToKey__
@@ -158,16 +153,6 @@
         <autogen>
             __KeyToKey__
             KeyCode::FORWARD_DELETE, VK_COMMAND,
-            KeyCode::TAB, VK_CONTROL
-        </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::RETURN, VK_COMMAND,
-            KeyCode::TAB, VK_CONTROL, VK_SHIFT
-        </autogen>
-        <autogen>
-            __KeyToKey__
-            KeyCode::SPACE, VK_COMMAND,
             KeyCode::TAB, VK_CONTROL
         </autogen>
     </item>
