@@ -1,13 +1,13 @@
 install() {
-    #install_fzf
+    install_fzf
     install_fasd
+    install_antigen
 }
 
 install_fzf() {
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install
 }
-
 
 install_fasd () {
     local fasd_script_file="${HOME}/.fasd.zsh"
@@ -42,8 +42,7 @@ get_url_to_file () {
 }
 
 install_antigen() {
-    //steal everything from Thanos
-
+    curl -L https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > ~/antigen.zsh
 }
 
 install

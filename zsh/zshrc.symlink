@@ -16,4 +16,14 @@ fi
 source ~/.fzf.zsh
 source ~/.localrc
 
+
+#start fasd
 eval "$(fasd --init auto)"
+
+
+#start antigen
+source ~/antigen.zsh
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen apply
