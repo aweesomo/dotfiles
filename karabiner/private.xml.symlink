@@ -35,6 +35,17 @@
         <!--remap controls-->
         <autogen>
             __KeyToKey__
+            KeyCode::FORWARD_DELETE, VK_COMMAND,
+            KeyCode::CURSOR_RIGHT, VK_COMMAND
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::DELETE, VK_COMMAND,
+            KeyCode::CURSOR_LEFT, VK_COMMAND
+        </autogen>
+
+        <autogen>
+            __KeyToKey__
             KeyCode::C, VK_COMMAND,
             KeyCode::C, VK_CONTROL
         </autogen>
@@ -79,6 +90,16 @@
         <name>Unmap the command controls for iterm</name>
         <identifier>private.unmap.old.command.functions</identifier>
         <only>ITERM</only>
+        <autogen>
+            __KeyToKey__
+            KeyCode::CURSOR_LEFT, VK_COMMAND,
+            KeyCode::VK_NONE
+        </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::CURSOR_RIGHT, VK_COMMAND,
+            KeyCode::VK_NONE
+        </autogen>
         <autogen>
             __KeyToKey__
             KeyCode::C, VK_CONTROL,
