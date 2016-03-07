@@ -16,6 +16,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set backspace=indent,eol,start
+set suffixesadd+=.java
 
 let mapleader=" "
 noremap \ ,
@@ -35,6 +36,9 @@ nnoremap <CR> :noh<CR><CR>
 
 autocmd FileType java call s:ConfigureEclimJavaBindings()
 
+
+autocmd FileType java let delimitMate_expand_cr = 1
+
 function s:ConfigureEclimJavaBindings()
     nnoremap <silent> <buffer><leader>i :JavaImport<CR>
     nnoremap <silent> <buffer><leader>d :JavaDocSearch -x declarations<CR>
@@ -42,11 +46,22 @@ function s:ConfigureEclimJavaBindings()
     nnoremap <silent> <buffer><leader>jgs :JavaGetSet<CR>
     nnoremap <silent> <buffer><leader>ju :JUnit<CR>
     nnoremap <silent> <buffer><leader>jc :JavaCorrect<CR>
+    let b:EclimCompletionMethod = 'omnifunc'
+    set path+=$HOME/git/**/java
+    set suffixesadd+=.java
 endfunction
+
+
+autocmd FileType java if &completefunc != '' | let &omnifunc=&completefunc | endif
+autocmd FileType java nnoremap <silent> <buffer> <CR> :JavaSearchContext<CR>
 
 let g:UltiSnipsExpandTrigger="<C-e>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+let g:indentLine_color_term = 239
+let g:indentLine_color_gui = '#09AA08'
+let g:indentLine_char = '│'
 
 
 function s:PluginsMissing()
@@ -75,7 +90,8 @@ Plug 'https://github.com/SirVer/ultisnips.git'
 Plug 'https://github.com/honza/vim-snippets.git'
 Plug 'https://github.com/OmniSharp/omnisharp-vim'
 Plug 'https://github.com/scrooloose/syntastic'
-
+Plug 'https://github.com/Raimondi/delimitMate.git'
+Plug 'https://github.com/Yggdroot/indentLine.git'
 if s:PluginsMissing()
     PlugInstall
 endif
