@@ -22,6 +22,11 @@
         </autogen>
         <autogen>
             __KeyToKey__
+            KeyCode::U, VK_COMMAND,
+            KeyCode::U, VK_CONTROL
+        </autogen>
+        <autogen>
+            __KeyToKey__
             KeyCode::W, VK_COMMAND,
             KeyCode::W, VK_CONTROL
         </autogen>

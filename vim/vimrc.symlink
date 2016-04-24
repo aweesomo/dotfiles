@@ -33,21 +33,20 @@ noremap <Right> <Nop>
 ""clear search highlighting
 nnoremap <CR> :noh<CR><CR>
 
-
+autocmd FileType java setlocal path=,,.,**/src/**/java
 autocmd FileType java call s:ConfigureEclimJavaBindings()
 
 
 autocmd FileType java let delimitMate_expand_cr = 1
 
 function s:ConfigureEclimJavaBindings()
-    nnoremap <silent> <buffer><leader>i :JavaImport<CR>
+    nnoremap <silent> <buffer><leader>i :JavaImportOrganize<CR>
     nnoremap <silent> <buffer><leader>d :JavaDocSearch -x declarations<CR>
     nnoremap <silent> <buffer><CR> :JavaSearchContext<CR>
     nnoremap <silent> <buffer><leader>jgs :JavaGetSet<CR>
     nnoremap <silent> <buffer><leader>ju :JUnit<CR>
     nnoremap <silent> <buffer><leader>jc :JavaCorrect<CR>
     let b:EclimCompletionMethod = 'omnifunc'
-    set path+=$HOME/git/**/java
     set suffixesadd+=.java
 endfunction
 
@@ -84,7 +83,8 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
-Plug 'kien/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'klen/python-mode'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.sh' }
 Plug 'https://github.com/SirVer/ultisnips.git' 
 Plug 'https://github.com/honza/vim-snippets.git'
