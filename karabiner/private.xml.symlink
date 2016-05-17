@@ -47,6 +47,11 @@
         </autogen>
         <autogen>
             __KeyToKey__
+            KeyCode::O, VK_COMMAND,
+            KeyCode::O, VK_CONTROL
+        </autogen>
+        <autogen>
+            __KeyToKey__
             KeyCode::Z, VK_COMMAND,
             KeyCode::Z, VK_CONTROL
         </autogen>
