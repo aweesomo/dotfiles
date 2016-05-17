@@ -73,6 +73,11 @@
             KeyCode::DELETE, VK_COMMAND,
             KeyCode::CURSOR_LEFT, VK_COMMAND
         </autogen>
+        <autogen>
+            __KeyToKey__
+            KeyCode::K, VK_COMMAND,
+            KeyCode::P, VK_CONTROL
+        </autogen>
 
         <autogen>
             __KeyToKey__
