@@ -22,7 +22,7 @@ eval "$(fasd --init auto)"
 
 
 #start antigen
-source ~/antigen.zsh
+source ~/.antigen.zsh
 
 antigen bundle zsh-users/zsh-syntax-highlighting
 

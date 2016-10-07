@@ -42,7 +42,7 @@ get_url_to_file () {
 }
 
 install_antigen() {
-    curl -L https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > ~/antigen.zsh
+    curl -L https://raw.githubusercontent.com/zsh-users/antigen/master/antigen.zsh > ~/.antigen.zsh
 }
 
 install
