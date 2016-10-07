@@ -3,6 +3,8 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 alias ls='ls -G'
+alias cp='cp -i'
+alias mv='mv -i'
 
 alias a1='!:2'
 alias a2='!:3'
@@ -13,3 +15,4 @@ alias a6='!:7'
 alias a7='!:8'
 
 alias mvnn='mvn clean install -DskipTests=true'
+
